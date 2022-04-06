@@ -12,42 +12,34 @@
         <activity
             android:name=".PerfilActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen" />
         <activity
             android:name=".DetalharProntuarioActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen" />
         <activity
             android:name=".ProntuarioActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen" />
         <activity
             android:name=".InicioActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen" />
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen" />
         <activity
             android:name=".CadastrarActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen" />
         <activity
             android:name=".WelcomeActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen" />
         <activity
             android:name=".ComecoActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
             android:theme="@style/fullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,5 +47,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
