@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,104 +11,102 @@
 
     <ImageButton
         android:id="@+id/btn_voltar"
-        android:layout_marginTop="10dp"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="@dimen/height_80"
+        android:layout_height="@dimen/height_60"
         android:background="@color/white"
         android:src="@drawable/ic_baseline_arrow_back_ios_24"
         android:textColor="@color/color_secundary"
-        android:textSize="12sp" />
+        android:textSize="@dimen/texto_pequeno"
+        android:contentDescription="@string/descricao_voltar"/>
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="Imagem da logomarca"
-        app:srcCompat="@drawable/logo_consulte"  />
+        android:layout_marginTop="@dimen/margin_80"
+        android:contentDescription="@string/descricao_logomarca"
+        app:srcCompat="@drawable/logo_consulte" />
 
     <LinearLayout
         android:id="@+id/layout"
-        android:layout_marginTop="0dp"
-        android:layout_width="match_parent"
-        android:layout_marginEnd="40dp"
-        android:layout_below="@+id/logo"
-        android:layout_marginStart="40dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/margin_40"
+        android:layout_marginStart="@dimen/margin_40"
+        android:orientation="vertical"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="@dimen/margin_40">
 
         <EditText
             android:id="@+id/nome_completo"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="@dimen/height_60"
             android:fontFamily="@font/normal_signika"
             android:autofillHints="name"
             android:inputType="text"
             android:maxLength="50"
             android:textColor="@color/color_secundary"
-            android:textSize="12sp"
+            android:textSize="@dimen/texto_pequeno"
             android:textColorHint="@color/color_secundary"
             android:hint="@string/lbl_nome">
         </EditText>
 
-
         <EditText
+            android:autofillHints="username"
             android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
             android:maxLength="20"
             android:fontFamily="@font/normal_signika"
             android:inputType="text"
             android:textColorHint="@color/color_secundary"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
             android:textColor="@color/color_secundary"
-            android:textSize="12sp"
+            android:textSize="@dimen/texto_pequeno"
             android:hint="@string/lbl_nickname"/>
-
 
         <EditText
             android:id="@+id/senha"
-            android:textColorHint="@color/color_secundary"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="@dimen/height_60"
+            android:textColorHint="@color/color_secundary"
             android:maxLength="20"
             android:fontFamily="@font/normal_signika"
-            android:textSize="12sp"
+            android:textSize="@dimen/texto_pequeno"
             android:textColor="@color/color_secundary"
             android:inputType="textPassword"
-            android:hint="@string/lbl_senha">
+            android:hint="@string/lbl_senha"
+            android:autofillHints="password">
         </EditText>
     </LinearLayout>
 
 
     <Button
         android:id="@+id/btn_cadastrar"
+        android:layout_below="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="40dp"
+        android:layout_height="@dimen/height_button"
+        android:layout_marginEnd="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginStart="@dimen/margin_40"
         android:textAllCaps="false"
         android:text="@string/cadastrar"
         android:fontFamily="@font/normal_signika"
-        android:textColor="#fff"
-        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texto_pequeno"
         android:background="@drawable/bck_primary"
         android:layout_marginBottom="10dp"/>
 
-
     <TextView
-        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/versao"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_40"
         android:fontFamily="@font/normal_signika"
+        android:text="@string/versao"
+        android:textAlignment="center"
         android:textColor="@color/color_secundary"
-        android:textSize="16sp"
-        android:textAlignment="center"/>
-
-
-</LinearLayout>
+        android:textSize="@dimen/texto_normal" />
+</RelativeLayout>

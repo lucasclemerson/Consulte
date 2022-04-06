@@ -25,6 +25,8 @@
     <string name="lbl_senha">*****</string>
     <string name="lbl_nickname">Nickname</string>
 
-    <!--teste-->
+    <!--descrições-->
+    <string name="descricao_logomarca">Imagem da logomarca</string>
+    <string name="descricao_voltar">Imagem com a tecla de voltar</string>
 
 </resources>
