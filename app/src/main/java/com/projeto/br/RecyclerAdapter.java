@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.projeto.br.bd.BancoDados;
 import com.projeto.br.controller.Paciente;
@@ -63,6 +64,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MinhaA
 
     public MinhaAdapterProntuario onCreateMinhaAdapterProntuario(ViewGroup viewGroup, int type) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.lista_prontuarios, viewGroup);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String numero = ((TextView) view.findViewById(R.id.numero_prontuario)).getText().toString();
+                Toast.makeText(context, numero, Toast.LENGTH_LONG).show();
+            }
+        });
         return new MinhaAdapterProntuario(view);
     }
 
