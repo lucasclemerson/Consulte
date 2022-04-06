@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".PerfilActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_voltar"
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:textColor="@color/color_secundary"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_marginStart="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="4dp">
+
+
+            <ImageView
+                android:id="@+id/imagem_principal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="Imagem da logomarca"
+                app:srcCompat="@drawable/homem_moreno"
+                android:background="@drawable/bck_body"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/nickname"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/normal_signika"
+                android:text="@string/lbl_nickname"
+                android:textAlignment="center"
+                android:textColor="@color/color_primary" />
+        </LinearLayout>
+
+        <!--resto das imagem-->
+        <LinearLayout
+            android:layout_marginEnd="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/image1"
+                    android:layout_margin="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="Imagem da logomarca"
+                    app:srcCompat="@drawable/homem_moreno"
+                    android:layout_gravity="start"/>
+
+                <ImageButton
+                    android:id="@+id/image2"
+                    android:layout_margin="10dp"
+                    android:layout_width="80dp"
+                    android:background="@color/white"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="Imagem da logomarca"
+                    app:srcCompat="@drawable/mulher_morena"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/image3"
+                    android:layout_margin="10dp"
+                    android:layout_width="80dp"
+                    android:background="@color/white"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="Imagem da logomarca"
+                    app:srcCompat="@drawable/mulher_galega"
+                    android:layout_gravity="start"/>
+
+                <ImageButton
+                    android:id="@+id/image4"
+                    android:layout_margin="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="Imagem da logomarca"
+                    app:srcCompat="@drawable/homem_galego"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nome_completo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/normal_signika"
+            android:autofillHints="name"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textColor="@color/color_secundary"
+            android:textSize="12sp"
+            android:textColorHint="@color/color_secundary"
+            android:hint="@string/lbl_nome">
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/senha"
+            android:textColorHint="@color/color_secundary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLength="20"
+            android:fontFamily="@font/normal_signika"
+            android:textSize="12sp"
+            android:textColor="@color/color_secundary"
+            android:inputType="text"
+            android:hint="@string/lbl_senha">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_atualizar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/atualizar"
+        android:fontFamily="@font/normal_signika"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:background="@drawable/bck_primary"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

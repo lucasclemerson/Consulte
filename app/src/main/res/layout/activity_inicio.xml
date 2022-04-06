@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".InicioActivity">
+
+    <!--cabeçario-->
+    <android.support.v7.widget.Toolbar
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_marginEnd="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Imagem da logomarca"
+            app:srcCompat="@drawable/logo_consulte"
+            android:layout_gravity="end"/>
+
+
+        <LinearLayout
+            android:layout_marginStart="30dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagem_principal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>"
+
+            <TextView
+                android:id="@+id/lbl_nome_completo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/normal_signika"
+                android:text="@string/lbl_nickname"
+                android:textAlignment="center"
+                android:textColor="@color/color_primary" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!-- Corpo da aplicação-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="00dp"
+        android:layout_marginBottom="-60dp"
+        android:orientation="vertical"
+        android:background="@drawable/bck_body">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imagem_listar_pessoas"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/bck_white"
+                    app:srcCompat="@drawable/pessoa"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pessoas"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_primary"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/normal_signika"
+                    android:layout_marginTop="-30dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imagem_listar_prontuarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/bck_white"
+                    app:srcCompat="@drawable/pasta_de_arquivo"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prontuários"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/normal_signika"
+                    android:textColor="@color/color_primary"
+                    android:layout_marginTop="-30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/bck_white"
+                    app:srcCompat="@drawable/mudar"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Realocar paciente"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_primary"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/normal_signika"
+                    android:layout_marginTop="-30dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imagem_editar_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/bck_white"
+                    app:srcCompat="@drawable/editar"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Editar perfil"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/normal_signika"
+                    android:textColor="@color/color_primary"
+                    android:layout_marginTop="-30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/bck_white"
+                    app:srcCompat="@drawable/backup"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Realizar backup"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_primary"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/normal_signika"
+                    android:layout_marginTop="-30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imagem_faleconosco"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/bck_white"
+                    app:srcCompat="@drawable/whatsapp"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fale conosco"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_primary"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/normal_signika"
+                    android:layout_marginTop="-30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_finalizar_sessao"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/color_secundary"
+                android:background="@drawable/bck_white"
+                android:text="@string/finalizar_sessao"
+                android:textAllCaps="false"
+                android:fontFamily="@font/normal_signika"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:text="@string/versao"
+                android:fontFamily="@font/normal_signika"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="30dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

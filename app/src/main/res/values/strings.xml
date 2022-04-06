@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Consulte</string>
+
+    <!--Dialogos-->
+    <string name="dialog_title_sair">Messagem</string>
+    <string name="dialog_message_sair">Você deseja terminar a sessão?</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancelar">Cancelar</string>
+
+    <!-- conteudo -->
+    <string name="versao">Versão beta</string>
+    <string name="forma_desenvolvimento">Desenvolvimento IFRN</string>
+
+    <!--botões-->
+    <string name="voltar">Voltar</string>
+    <string name="finalizar_sessao">Finalizar sessão</string>
+    <string name="cadastrar">Cadastrar agora</string>
+    <string name="entrar">Confirmar</string>
+    <string name="atualizar">Atualizar perfil</string>
+    <string name="ir_login">Já sou usuário</string>
+    <string name="ir_cadastro">Ainda não possui cadastro? Clique aqui!</string>
+
+    <!--labels-->
+    <string name="lbl_nome">Nome completo</string>
+    <string name="lbl_senha">*****</string>
+    <string name="lbl_nickname">Nickname</string>
+
+    <!--teste-->
+
+</resources>

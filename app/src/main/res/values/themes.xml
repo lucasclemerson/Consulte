@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Consulte" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_secundary</item>
+        <item name="colorPrimaryDark">@color/color_secundary</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="fullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_opacity</item>
+        <item name="colorPrimaryDark">@color/color_opacity</item>
+        <item name="colorAccent">@color/color_primary</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Consulte.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Consulte.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Consulte.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
