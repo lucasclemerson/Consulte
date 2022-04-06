@@ -58,7 +58,13 @@ public class ComecoActivity extends AppCompatActivity {
             }
         }).start();
 
-        preencher_branco();
+        /*preencher_branco();
+        BancoDados bd = new BancoDados(getApplicationContext());
+        for (Usuario u: bd.listar_usuarios()){
+            Log.e("USUARIO: ", u.toString());
+        }
+         */
+
     }
 
 
@@ -87,9 +93,9 @@ public class ComecoActivity extends AppCompatActivity {
         bd.inserir_comorbidade(new Comorbidade("Diabetes", 1));
         bd.inserir_comorbidade(new Comorbidade("Câncer", 2));
         bd.inserir_comorbidade(new Comorbidade("Tabagista", 3));
-        bd.inserir_comorbidade(new Comorbidade("Sintômatico respiratório", 3));
-        bd.inserir_comorbidade(new Comorbidade("Alcoólatra", 4));
-        bd.inserir_comorbidade(new Comorbidade("Alzhaimer", 5));
+        bd.inserir_comorbidade(new Comorbidade("Sintômatico respiratório", 4));
+        bd.inserir_comorbidade(new Comorbidade("Alcoólatra", 5));
+        bd.inserir_comorbidade(new Comorbidade("Alzhaimer", 6));
 
         bd.inserir_prontuario(new Prontuario("1", "Rua 1"));
         bd.inserir_prontuario(new Prontuario("2", "Rua 2"));

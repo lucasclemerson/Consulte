@@ -53,7 +53,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MinhaA
                 contador++;
             }
         }
-        holder.pessoas.setText(contador);
+        holder.pessoas.setText(Integer.toString(contador));
     }
 
     @Override

@@ -11,15 +11,15 @@
 
     <ImageButton
         android:id="@+id/btn_voltar"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/margin_10"
         android:layout_width="@dimen/height_80"
         android:layout_height="@dimen/height_60"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_10"
         android:background="@color/white"
+        android:contentDescription="@string/descricao_voltar"
         android:src="@drawable/ic_baseline_arrow_back_ios_24"
         android:textColor="@color/color_secundary"
-        android:textSize="@dimen/texto_pequeno"
-        android:contentDescription="@string/descricao_voltar"/>
+        android:textSize="@dimen/texto_pequeno" />
 
     <ImageView
         android:id="@+id/logo"
@@ -38,7 +38,7 @@
         android:layout_marginStart="@dimen/margin_40"
         android:orientation="vertical"
         android:layout_below="@+id/logo"
-        android:layout_marginTop="@dimen/margin_40">
+        android:layout_marginTop="@dimen/margin_20">
 
         <EditText
             android:id="@+id/nome_completo"
@@ -49,7 +49,7 @@
             android:inputType="text"
             android:maxLength="50"
             android:textColor="@color/color_secundary"
-            android:textSize="@dimen/texto_pequeno"
+            android:textSize="@dimen/texto_medio"
             android:textColorHint="@color/color_secundary"
             android:hint="@string/lbl_nome">
         </EditText>
@@ -64,7 +64,7 @@
             android:inputType="text"
             android:textColorHint="@color/color_secundary"
             android:textColor="@color/color_secundary"
-            android:textSize="@dimen/texto_pequeno"
+            android:textSize="@dimen/texto_medio"
             android:hint="@string/lbl_nickname"/>
 
         <EditText
@@ -74,7 +74,7 @@
             android:textColorHint="@color/color_secundary"
             android:maxLength="20"
             android:fontFamily="@font/normal_signika"
-            android:textSize="@dimen/texto_pequeno"
+            android:textSize="@dimen/texto_medio"
             android:textColor="@color/color_secundary"
             android:inputType="textPassword"
             android:hint="@string/lbl_senha"
@@ -85,19 +85,19 @@
 
     <Button
         android:id="@+id/btn_cadastrar"
-        android:layout_below="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_button"
-        android:layout_marginEnd="@dimen/margin_40"
-        android:layout_marginTop="@dimen/margin_40"
+        android:layout_below="@+id/layout"
         android:layout_marginStart="@dimen/margin_40"
-        android:textAllCaps="false"
-        android:text="@string/cadastrar"
-        android:fontFamily="@font/normal_signika"
-        android:textColor="@color/white"
-        android:textSize="@dimen/texto_pequeno"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginEnd="@dimen/margin_40"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/bck_primary"
-        android:layout_marginBottom="10dp"/>
+        android:fontFamily="@font/normal_signika"
+        android:text="@string/cadastrar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texto_medio" />
 
     <TextView
         android:layout_width="match_parent"

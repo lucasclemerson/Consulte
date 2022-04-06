@@ -210,7 +210,7 @@ public class BancoDados extends SQLiteOpenHelper {
         ArrayList<Comorbidade> lista = new ArrayList<>();
 
         while (cursor.moveToNext()){
-            String nome = cursor.getString(cursor.getColumnIndexOrThrow(CL_NUMERO));
+            String nome = cursor.getString(cursor.getColumnIndexOrThrow(CL_NOME));
             int id = cursor.getInt(cursor.getColumnIndexOrThrow(CL_ID));
             lista.add(new Comorbidade(nome, id));
         }
