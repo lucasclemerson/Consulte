@@ -28,5 +28,17 @@
     <!--descrições-->
     <string name="descricao_logomarca">Imagem da logomarca</string>
     <string name="descricao_voltar">Imagem com a tecla de voltar</string>
+    <string name="descricao_default">Imagem do menu iniciar</string>
+
+    <!--textos do menu inicial-->
+    <string name="ico_pessoas">Pessoas</string>
+    <string name="ico_prontuarios">Prontuários</string>
+    <string name="ico_realocar_paciente">Realocar paciente</string>
+    <string name="ico_editar_perfil">Editar perfil</string>
+    <string name="ico_realizar_backup">Realizar backup</string>
+    <string name="ico_faleconosco">Fale conosco</string>
+
+
+
 
 </resources>

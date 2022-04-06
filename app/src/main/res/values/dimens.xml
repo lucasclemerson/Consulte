@@ -13,6 +13,9 @@
 
     <!--heigths-->
     <dimen name="height_button">60dp</dimen>
+    <dimen name="height_180">180dp</dimen>
+    <dimen name="height_160">160dp</dimen>
+    <dimen name="height_140">140dp</dimen>
     <dimen name="height_120">120dp</dimen>
     <dimen name="height_100">100dp</dimen>
     <dimen name="height_80">80dp</dimen>

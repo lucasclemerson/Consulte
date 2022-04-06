@@ -42,9 +42,9 @@
         android:layout_marginTop="@dimen/margin_40">
 
         <EditText
+            android:autofillHints="name"
             android:id="@+id/campo_nickname"
             android:maxLength="20"
-            android:text="clemerson"
             android:fontFamily="@font/normal_signika"
             android:inputType="text"
             android:textColorHint="@color/color_secundary"
@@ -56,6 +56,7 @@
 
 
         <EditText
+            android:autofillHints="password"
             android:id="@+id/campo_senha"
             android:textColorHint="@color/color_secundary"
             android:layout_width="match_parent"
@@ -63,7 +64,6 @@
             android:fontFamily="@font/normal_signika"
             android:maxLength="20"
             android:textSize="@dimen/texto_medio"
-            android:text="12345"
             android:textColor="@color/color_secundary"
             android:inputType="textPassword"
             android:hint="@string/lbl_senha">
