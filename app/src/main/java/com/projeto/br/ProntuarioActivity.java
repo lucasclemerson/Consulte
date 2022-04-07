@@ -103,8 +103,6 @@ public class ProntuarioActivity extends AppCompatActivity implements ProntuarioI
             }
         });
 
-
-
         //// botão flutuante
         ((FloatingActionButton) findViewById(R.id.adiciona_prontuario)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +116,21 @@ public class ProntuarioActivity extends AppCompatActivity implements ProntuarioI
 
     @Override
     public void onItemSelected(Prontuario p) {
-        Log.e("NUMERO PRONTUARIA", p.getNumero());
+        /*
+        Intent intent = new Intent(getApplicationContext(), DetalharProntuarioActivity.class);
+
+        intent.putExtra("nickname", usuario.getNickname());
+        intent.putExtra("nome", usuario.getNome());
+        intent.putExtra("senha", usuario.getSenha());
+        intent.putExtra("avatar", usuario.getAvatar());
+
+        intent.putExtra("prontuario_numero", p.getNumero());
+        intent.putExtra("prontuario_endereco", p.getEndereco());
+
+        startActivity(intent);
+        finish();
+
+         */
     }
 
 

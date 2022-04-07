@@ -57,14 +57,6 @@ public class ComecoActivity extends AppCompatActivity {
                 ir_welcome();
             }
         }).start();
-
-        /*preencher_branco();
-        BancoDados bd = new BancoDados(getApplicationContext());
-        for (Usuario u: bd.listar_usuarios()){
-            Log.e("USUARIO: ", u.toString());
-        }
-         */
-
     }
 
 
@@ -109,9 +101,6 @@ public class ComecoActivity extends AppCompatActivity {
         bd.inserir_usuario(new Usuario("Clemerson Lucas de Oliveira", "clemerson", "12345", "padrao"));
         bd.inserir_usuario(new Usuario("Caio César Penha Dantas", "caio", "12345", "padrao"));
     }
-
-
-
 
 
 

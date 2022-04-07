@@ -29,7 +29,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MinhaA
         this.context = context;
         this.prontuarios = p;
         this.interfaceProntuario = (ProntuarioActivity) this.context;
-
     }
 
     @NonNull
@@ -55,6 +54,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MinhaA
             }
         }
         holder.pessoas.setText(Integer.toString(contador));
+
     }
 
     @Override
@@ -91,6 +91,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MinhaA
 
         @Override
         public void onClick(View view) {
+            Toast.makeText(view.getContext(), numero.getText().toString(), Toast.LENGTH_LONG).show();
             //interfaceProntuario.onItemSelected(prontuarios.get(getAdapterPosition()));
         }
     }

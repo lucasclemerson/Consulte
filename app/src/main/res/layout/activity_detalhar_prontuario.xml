@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".DetalharProntuarioActivity">
-</android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btn_voltar"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="@dimen/width_80"
+        android:layout_height="@dimen/height_60"
+        android:contentDescription="@string/descricao_voltar"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:textColor="@color/color_secundary"
+        android:textSize="@dimen/texto_pequeno" />
+
+</LinearLayout>
